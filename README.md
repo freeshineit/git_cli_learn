@@ -48,14 +48,45 @@ git 只关注内容
 
 >   git commit -a
 
-修改上一次提交的日志
+修改上一次提交的日志(使用请注意，最好不要使用)
 
 >   git commit --amend
 
 
+## 查看提交日志记录
+
+>   git log
+
+查看指定文件提交记录（会展示文件的具体修改）
+>   git log -p index.js
+
+查看文件内容具体修改，展示每一行修改记录，记录包括时间、作者和内容（这个很有用）
+>   git blame README.md
 
 ## 查看与上次提交版本文件的不同
 
+>   git diff
+
+>   git diff index.js
+
+## 分支
+
+基于当前分支新建分支
+>   git branch new-branch
+
+查看所有分支（包括远程和分支最新的`commit`）
+>   git branch -av
+
+切换分支，切换到`develop`分支
+>   git checkout develop
+
+删除本地xxx分支（不可以删除当前分支）
+>   git branch -d xxx
+
+## 标签
+
+给当前提交打一个标签（一般用于版本好更新时）
+>   git tag new-tag
 
 
 ## reset
