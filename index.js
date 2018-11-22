@@ -6,4 +6,5 @@ class App extends Component{
             <div>App</div>
         );
     }
+    
 }

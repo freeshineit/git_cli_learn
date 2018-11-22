@@ -18,6 +18,14 @@ git 只关注内容
 
 这个命令会在当前目录下生成一个`.git`文件夹， 并创建一个`master`分支
 
+## 查看文件状态
+
+查看项目路径下全部已修改文件（add的文件和没有add的文件）
+
+> git status
+
+> git status .
+
 ## 添加变动的文件
 
 使用下面命令查看`git add`的帮助
@@ -30,14 +38,21 @@ git 只关注内容
 +   添加项目所有文件变化
     > git add --all
 
+## commit
 
-## 查看文件状态
+把之前添加到缓存中的文件添加一个commit日志
 
-查看项目路径下全部已修改文件（add的文件和没有add的文件）
+>   git commit -m '更新代码'
 
-> git status
+提交本地的所有修改并在控制面板中添加提交日志
 
-> git status .
+>   git commit -a
+
+修改上一次提交的日志
+
+>   git commit --amend
+
+
 
 ## 查看与上次提交版本文件的不同
 
