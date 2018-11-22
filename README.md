@@ -86,7 +86,7 @@ git 只关注内容
 ## 标签
 
 给当前提交打一个标签（一般用于版本好更新时）
->   git tag new-tag
+>   git tag new-tag
 
 
 ## reset
