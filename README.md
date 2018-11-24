@@ -93,6 +93,14 @@ git 只关注内容
 查看远程端
 >   git remote -v
 
+## 拉取
+
+不会自动合并
+>   git fetch \<remote\>
+
+自动合并
+>   git pull \<remote\> \<branch\>
+
 
 ## reset
 
