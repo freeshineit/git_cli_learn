@@ -144,7 +144,13 @@ git 只关注内容
 
 
 
-## reset
+## 撤销
+
+放弃工作目录下的所有修改
+>   git reset --hard HEAD
+
+放弃指定文件的所有本地修改
+>   git checkout HEAD \<file\>
 
 +   返回到上一次添加当前文件之前（从缓存区中移除出去）
     >   git reset HEAD .
