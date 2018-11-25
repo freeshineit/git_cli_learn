@@ -88,10 +88,34 @@ git 只关注内容
 给当前提交打一个标签（一般用于版本好更新时）
 >   git tag new-tag
 
+发布标签
+>   git push --tags
+
 ## 更新与发布
 
 查看远程端
 >   git remote -v
+
+把本地版本推到远程
+>   git push \<remote\> \<branch\>
+
+🌰
+
+>   git push origin develop
+
+删除远程分支(删除的是远程跟踪, 不是删除远程分支)
+
+>   git branch -dr <remote/branch>
+
+🌰
+>   git branch -dr origin/test
+
+删除远程分支
+>   git push origin --delete \<branch\>
+
+🌰
+>   git push origin --delete test
+
 
 ## 拉取
 
@@ -100,6 +124,24 @@ git 只关注内容
 
 自动合并
 >   git pull \<remote\> \<branch\>
+
+## 合并
+
+
+合并分支到当前分支
+>   git merge \<branch\>
+
+## 重置
+
+当前版本重置到分支中（请误重置已经发布的提交）
+>   git rebase \<branch\>
+
+退出重置
+>   git rebase --abort
+
+解决冲突后继续重置
+>   git rebase --continue
+
 
 
 ## reset
