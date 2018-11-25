@@ -116,6 +116,8 @@ git 只关注内容
 🌰
 >   git push origin --delete test
 
+强制推送（发布），这样会把远程版本覆盖
+>   git push origin \<branch\> -f
 
 ## 拉取
 
