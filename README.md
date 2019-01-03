@@ -133,6 +133,10 @@ git 只关注内容
 合并分支到当前分支
 >   git merge \<branch\>
 
+[fatal: refusing to merge unrelated histories](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase)
+
+>   git merge --allow-unrelated-histories \<branch\>
+
 ## 重置
 
 当前版本重置到分支中（请误重置已经发布的提交）
